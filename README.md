@@ -39,5 +39,5 @@ I used the knowledge acquired so far to create this page
 
 💻 Result:
 
-Veja a aplicação [aqui](https://dog_walker.vercel.app/)
+Veja a aplicação [aqui](https://dog-walker-phi.vercel.app/)
 ![Preview page GIF](./images/preview.gif)
