@@ -1,0 +1,124 @@
+#planos {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  background-color: var(--rosa-bebe);
+}
+
+.planos__titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.planos__texto {
+  padding-top: 3rem;
+  text-align: justify;
+}
+
+.planos__cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+
+.cartao {
+  align-items: center;
+  border-radius: 5%;
+  width: 300px;  
+  transition: 1s all;
+}
+
+.cartao:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cartao--rosa {
+  background-color: var(--rosa-claro);
+  box-shadow: 3px 3px 13px rgba(179, 175, 175, 0.4);
+}
+
+.cartao--amarelo {
+  background-color: var(--amarelo);
+  box-shadow: 3px 3px 13px rgba(179, 175, 175, 0.4);
+}
+
+.cartao__titulo {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cartao__valor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.cartao__cifra {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cartao__numero {
+  font-size: 3rem;  
+  font-weight: 600;
+}
+
+.cartao__periodo {
+  font-size: 1rem;
+  margin-top: 1.6rem;
+  font-weight: 600;
+}
+
+.cartao__texto {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 810px) {
+  #planos {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .cartao {
+    height: 200px;
+    margin-bottom: 4rem;
+  }
+  .cartao__titulo {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .cartao__texto {
+    font-size: 1rem;
+  }
+  .cartao__numero {
+    font-size: 2.4rem;
+  }
+  .planos__cartoes {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .planos__texto {
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .cartao__valor {
+    margin-bottom: 1rem;
+  }
+  .cartao:hover {
+    transform: none;
+  }
+  
+}

@@ -1,0 +1,96 @@
+#servicos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+  height: 500px;
+}
+
+.servicos__titulo {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.servicos__texto {
+  text-align: justify;
+  padding: 0 4rem;
+  line-height: 2;
+  width: 600px;
+}
+
+.servicos__texto--destacado {
+  font-weight: bold;
+  background-color: var(--amarelo-claro);
+}
+
+.servicos__lista {
+  padding-top: 2rem;
+  text-align: left;
+  background-color: var(--rosa-bebe);
+  border-radius: 40px;
+}
+
+
+.servicos__item {
+  line-height: 2.5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.servicos__item.titulo {
+  font-weight: bold;
+}
+
+.servicos__conteudo {
+  display: flex;
+  justify-content: center;
+}
+
+.servicos__banner {
+  background: url(../../images/dog1.png) center no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
+
+
+@media (max-width: 810px) {
+  #servicos {
+    margin: 0rem;
+    height: 800px;
+  }
+
+  .servicos__conteudo {
+    flex-wrap: wrap;
+  }
+
+  .servicos__banner{
+    display: none;
+  }  
+
+  .servicos__texto {
+    width: 100vw;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .servicos__lista {
+    font-size: 0.9rem;
+    background-color: var(--rosa-bebe);
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .servicos__item {
+    line-height: 1.9;
+  }
+
+  .servicos__texto {
+    line-height: 1.3;
+    padding: 0.8rem;
+  }
+
+}

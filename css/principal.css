@@ -1,0 +1,80 @@
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  padding: 2rem;
+  height: 250px;
+  background-color: #ececec;
+}
+
+.principal__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+  transition: 1s all;
+}
+
+
+.principal__titulo.quemsomos {
+  box-sizing: border-box;
+  background-image: url(../../images/equipe.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 5rem 0 .8rem 0;
+}
+
+.principal__titulo.fazemos {
+  box-sizing: border-box;
+  background-image: url(../../images/serviço.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 5rem 0 .8rem 0;
+}
+
+.principal__titulo.agende {
+  box-sizing: border-box;
+  background-image: url(../../images/contato.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 5rem 0 .8rem 0;
+}
+
+.principal__texto {
+  padding: .8rem;
+  text-align: justify;
+}
+
+.principal__lista {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.principal__item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .principal {
+    height: 700px;
+  }
+
+  .principal__lista {
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .principal__texto {
+    margin-bottom: 2rem;
+  }
+
+  .principal__item {
+    width: 300px;
+  }
+
+}

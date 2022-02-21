@@ -1,0 +1,102 @@
+.contato__conteudo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato__banner {
+  background: url(../../images/dog2.png) center no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 500px;
+}
+
+
+#contato {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.contato__titulo {
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contato__formulario {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contato__formulario label {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+.contato__formulario fieldset {
+  border: none;
+  padding: 2rem;
+}
+
+.contato__input {
+  display: block;
+  margin: 0 0 2rem;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  filter: drop-shadow(3px 3px 13px rgba(179, 175, 175, 0.5));
+  font-family: 'Sintony', sans-serif;
+}
+
+.contato__input::placeholder {
+  font-family: 'Sintony', sans-serif;
+  font-size: .8rem;
+}
+
+
+.contato__send {
+  display: block;
+  margin: 0 0 3rem;
+  padding: 1rem;
+  width: 105%;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--amarelo);
+  filter: drop-shadow(3px 3px 3px rgba(179, 175, 175, 0.5));
+  font-family: 'Sintony', sans-serif;
+  transition: 1s all;
+}
+
+.contato__send:hover {
+  background-color: var(--rosa-escuro);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 810px) {
+
+  #contato {
+    padding: 0 2rem;
+  }
+  .contato__titulo {
+    margin-top: -2rem;
+  }
+  .contato__formulario {
+    font-size: 1rem;
+  }
+  .contato__banner {
+    display: none;
+  }
+  .contato__input {
+    width: 90%;
+
+  }
+  .contato__send {
+    width: 100%;
+
+  }
+}

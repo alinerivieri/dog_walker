@@ -1,0 +1,45 @@
+.chamada {
+  height: 500px;
+}
+
+.chamada__titulo {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chamada__texto {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.chamada__banner {
+  height: 90%;
+  background: url(../../images/banner5.jpg) bottom fixed no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 810px) {
+  .chamada {
+    height: 550px;
+    margin-bottom: 3rem;
+  }  
+
+  .chamada__banner{
+    background: url(../../images/banner4.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .chamada__titulo {
+    margin: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .chamada__texto {
+    margin: 1rem;
+    font-size: 1.7rem;
+  }
+  
+}

@@ -1,0 +1,70 @@
+#historia {
+  display: flex;
+  justify-content: space-evenly;
+  height: 400px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: var(--amarelo-claro);
+}
+
+
+.historia__conteudo {
+  width: 30%;
+  margin-left: 4rem;
+}
+
+.historia__titulo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.historia__texto {
+  line-height: 2;
+  text-align: justify;
+}
+
+.historia__texto--destacado {
+  font-weight: bold;
+}
+
+.historia__banner {
+  background: url(../../images/dog3.png) center no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
+
+.historia__banner--mobile {
+  display: none;
+}
+
+@media (max-width: 810px) {
+  #historia {
+    flex-wrap: wrap;
+    height: 300px;
+  }
+
+  .historia__banner {
+    display: none;
+  }
+
+  .historia__conteudo {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  #historia {
+    margin-top: 5rem;
+    height: 500px;
+  }
+  .historia__conteudo {
+    width: 90%;
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+}
+

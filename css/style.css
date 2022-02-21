@@ -1,0 +1,42 @@
+:root{
+  --amarelo:#FFB84C;
+  --amarelo-claro: #f8e2bb;
+  --rosa-escuro:#F956BD;
+  --rosa-claro: #FD95D6;
+  --rosa-bebe: #f1dbe9;
+  --bg: #f7f7f7;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Sintony', sans-serif;
+}
+
+.rodape {
+  background: var(--amarelo-claro);
+  color: #333333;
+  font-size: .8rem;
+  grid-area: rodape;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer__imagem {
+  position: fixed;
+  right: 0;
+  top: 100%;
+  width: 4em;
+  margin-top: -3em;
+  opacity: 40%;
+}
+
+@media (max-width: 768px) {
+  .footer__imagem {
+    display: none;
+  }
+}

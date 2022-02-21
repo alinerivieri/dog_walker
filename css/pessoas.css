@@ -1,0 +1,65 @@
+.pessoas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pessoa {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.pessoa__nome {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pessoa__imagem {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.pessoa__imagem--maria {
+  background-image: url(../../images/maria.png)
+}
+
+.pessoa__imagem--julia {
+  background-image: url(../../images/julia.png);
+}
+
+.pessoa__imagem--heloisa {
+  background-image: url(../../images/heloisa.png);
+}
+
+.pessoa__funcao {
+  padding: 1rem 3rem;
+  text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+  .pessoas {
+    flex-wrap: wrap;
+  }
+
+  .pessoa {
+    width: 300px;
+  }
+
+  .pessoa__imagem {
+    height: 150px;
+    width: 150px;
+  }
+  .pessoa__funcao {
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+}
